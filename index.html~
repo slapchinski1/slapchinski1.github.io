@@ -5,13 +5,15 @@
 		</title>
 	</head>
 	<body>
-		 Hello 
-		<section> 
-		wellcome 
-		</section>
 		<section>
-		How are you today?
+		Hello World!!
 		</section>
-		
-		
+		<p>
+		How are you today?
+		</p>
+		<p>
+		Wellcome to this page. 
+		</p>
+		</section>
+	</body>
 </html>
