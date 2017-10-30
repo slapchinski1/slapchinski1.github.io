@@ -1,0 +1,41 @@
+<html> 
+	<head>
+		<title>
+		 Test Hide 
+		</title>
+		<script type="text/javascript">
+			function hideimg(x){
+				document.getElementById(x).style.visibility="hidden";
+				setTimeout(function(){ getimg(x); },3000);
+			}
+
+			function getimg(x){
+				document.getElementById(x).src="http://beastypets.com/wp-content/uploads/2015/07/sad-dog-862x575.jpg";
+				document.getElementById(x).style.visibility="visible";
+			}
+		</script>
+	</head>
+		<body style="background-color:pink;color: white;">
+				<div style="margin:80px;background:white;padding:100;border-radius:5px; text-align: center;">	
+					<section style= "background-color: white;color:black;">
+					</section>
+						<nav>
+						<a style= "color: orange;" href="aboutme.html"/>
+						 About me 
+						</a>
+						<a style="color:orange;"href="Projects.html">
+						Projects
+						</a>
+					</nav>
+					<section style= "background-color: white;color:black;">
+					Hello World!! 
+					</section>
+				<section>
+				<img id="img1" onclick="hideimg('img1');" style="width:400px; height:200px;" src= "https://premierpups.com/azure/affordablepup/pups/french-bulldog-frenchie-puppies-for-sale-and-adoption-in-ohio-pennsylvania-635918496634658467.png?w=240">
+				<img id="img2" onclick="hideimg('img2');" style="width:400px; height:200px;" src= "http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg">
+				<img id="img4" style= "width:400px; height:200px;" src= "http://hopeforwomenmag.com/wp-content/uploads/2017/03/puppies-.jpg">
+				</section>
+				</div>
+			</body>
+</html>
+
