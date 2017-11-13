@@ -1,6 +1,13 @@
 <html>
 	<head>
 		<title>Clickable</title>
+
+		<script>
+			function clickme(){
+				document.getElementById("circle").innerHTML="Hello";
+			}
+		</script>
+
 	</head>
 
 		<body style="background-color:#ff3360 ;font-weight:bolder;margin: 40px;padding:30;border-radius:5px;text-align:center;">
@@ -16,11 +23,14 @@
 			</a>
 
 		</nav>
+		
 		<section>
+			<div id="circle" style="height:40px; width:90px; background-color:yellow; border-radius:100px; position:relative; top:201px; left:276px; padding-top:50px;">
+			</div> 
 			<img src="https://c402277.ssl.cf1.rackcdn.com/photos/11552/images/hero_full/rsz_namibia_will_burrard_lucas_wwf_us_1.jpg?1462219623" style="height:200px"/>
 			<br>
 			name: <input type="text" />
-			<input type="button" value="click me!"/>
+			<input type="button" value="click me!" onclick="clickme();"/>
 
 
 		</section>
