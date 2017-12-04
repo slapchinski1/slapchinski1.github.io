@@ -4,7 +4,12 @@
 
 		<script>
 			function clickme(){
-				document.getElementById("circle").innerHTML="Hello";
+				var name = document.getElementById("nameText").value;
+				document.getElementById("circle").innerHTML="Hello, "+ name + "!";
+			}
+			function clickme2(){
+				var name = document.getElementById("nameText2").value;
+				document.getElementById("circle2").innerHTML="Hello, "+ name + "!";
 			}
 		</script>
 
@@ -25,13 +30,17 @@
 		</nav>
 		
 		<section>
-			<div id="circle" style="height:40px; width:90px; background-color:yellow; border-radius:100px; position:relative; top:201px; left:276px; padding-top:50px;">
+			<div id="circle" style="height:40px; width:90px; background-color:yellow; border-radius:100px; position:absolute; top:45px; left:146px; padding-top:50px;">
+			</div> 
+			<div id="circle2" style="height:40px; width:90px; background-color:yellow; border-radius:100px; position:absolute; top:199px; left:199px; padding-top:50px;">
 			</div> 
 			<img src="https://c402277.ssl.cf1.rackcdn.com/photos/11552/images/hero_full/rsz_namibia_will_burrard_lucas_wwf_us_1.jpg?1462219623" style="height:200px"/>
 			<br>
-			name: <input type="text" />
+			name: <input type="text" id= "nameText" value="" />
 			<input type="button" value="click me!" onclick="clickme();"/>
 
+			name: <input type="text" id= "nameText2" value="" />
+			<input type="button" value="click me!" onclick="clickme2();"/>
 
 		</section>
 		</body> 
